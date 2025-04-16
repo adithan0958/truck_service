@@ -1,0 +1,560 @@
+{
+    "client_id": 0,
+    "client_group_no": 0,
+    "intake_id": 0,
+    "org_id": 0,
+    "domain_id": "",
+    "origin_id": "",
+    "intake_context": "",
+    "salutation": "string",
+    "middle_initial": "string",
+    "first_name": "string",
+    "last_name": "string",
+    "patient_id": "string",
+    "client_status": 0,
+    "admit_no": 0,
+    "admit_sequence": 0,
+    "is_deleted": false,
+    "basic_info": {
+      "ssn": "string",
+      "location_id": "int",
+      "lob_id": "int",
+      "gender": "string",
+      "is_adult": "bool",
+      "is_longterm": "bool",
+      "medicare_no": "string",
+      "medicaid_no": "string",
+      "mbi": "string",
+      "dob": "01/01/2000",
+      "is_pdgm_client": false
+    },
+    "other_info": {
+      "acuity_level": "acuity name",
+      "acuity_id": 0,
+      "acuity_code": 0,
+      "acuity_value": 0,
+      "transport_asst_level": "name of TAL",
+      "classifications": [
+        "string <-- classification name"
+      ],
+      "cpr_code": "string",
+      "intake_status": "string<-- mention",
+      "team_id": "int",
+      "coder": "int",
+      "coder_group": "int",
+      "gender_identity": "string",
+      "sexual_orientation": "string",
+      "marital_status": "string<-- mention",
+      "religion": "string<-- mention",
+      "ethnicity": [
+        "string <-- ethnicity name"
+      ],
+      "language": [
+        "string<-- language name"
+      ],
+      "living_situation": "string <-- mention",
+      "driving_direction": "string",
+      "notes": "string",
+      "place_of_service_id": "int",
+      "inpatient_facilities": [
+        "string"
+      ],
+      "funeral_home": ""
+    },
+    "funeral_home": {
+      "funeral_home_name": "",
+      "address": {
+        "address_id": 0,
+        "address1": "string",
+        "address2": "string",
+        "zip": "string",
+        "city": "string",
+        "state": "string",
+        "cbsa": "string",
+        "county": "string",
+        "phone": "",
+        "phone_extension": "",
+        "cell": ""
+      }
+    },
+    "hospice_info": {
+      "terminally_ill_certificate_date": "date",
+      "noe_date": "date",
+      "order_sign_med_director": "int",
+      "order_sign_med_director_office": "int",
+      "overseeing_physician_id": "int",
+      "faith_community": "string",
+      "level_of_care": "string",
+      "current_facility_id": "int",
+      "noe_signed_date": "",
+      "noe_uploaded_filepath": "string",
+      "loc_respite_end_date": "01/01/2000",
+      "loc_respite_end_time": "time",
+      "loc_post_respite_loc": "",
+      "loc_post_respite_pos": "",
+      "loc_post_respite_facility": ""
+    },
+    "address": {
+      "address_id": 0,
+      "address1": "string",
+      "address2": "string",
+      "zip": "string",
+      "city": "string",
+      "state": "string",
+      "cbsa": "string",
+      "county": "string",
+      "latitude": "string",
+      "longitude": "string",
+      "evacuation_zone_id": 0,
+      "evacuation_zone": "",
+      "phone": "string",
+      "cell": "string",
+      "work_phone": "string",
+      "alt_phone1": "string",
+      "alt_phone2": "string",
+      "alt_phone3": "string",
+      "email": "string",
+      "client_pay_billing_address": {
+        "send_invoice_to_this_address": "bool",
+        "first_name": "string",
+        "last_name": "string",
+        "address_id": 0,
+        "address1": "string",
+        "address2": "string",
+        "zip": "string",
+        "city": "string",
+        "state": "string",
+        "latitude": "string",
+        "longitude": "string",
+        "email": "string",
+        "phone": "string",
+        "cell": "string",
+        "guarantor_id": "string",
+        "guarantor_relation": "string",
+        "guarantor_first_name": "string",
+        "guarantor_last_name": "string",
+        "guarantor_middle_initial": "string"
+      },
+      "treatment_addresses": [
+        {
+          "treatment_address_id": "int",
+          "location_name": "string",
+          "facility_type": "string",
+          "address_id": 0,
+          "address1": "string",
+          "address2": "string",
+          "zip": "string",
+          "city": "string",
+          "state": "string",
+          "latitude": "string",
+          "longitude": "string",
+          "email": "string",
+          "phone": "string",
+          "cell": "string",
+          "is_primary": "bool"
+        }
+      ]
+    },
+    "pharmacy": {
+      "primary_pharmacy_id": "int",
+      "primary_pharmacy_name": "",
+      "hospital_id": "int",
+      "hospital_name": "sting"
+    },
+    "emergency_contacts": [
+      {
+        "emergency_contact_id": "int",
+        "first_name": "string",
+        "last_name": "string",
+        "relation": "string",
+        "priority": "string",
+        "gender": "string",
+        "dob": "string",
+        "language": "string",
+        "home_phone": "string",
+        "cell_phone": "string",
+        "work_phone": "string",
+        "fax": "string",
+        "email": "strinig",
+        "bereaved_priority": "string",
+        "is_minor_child": "bool",
+        "address_id": 0,
+        "address1": "string",
+        "address2": "string",
+        "zip": "string",
+        "city": "string",
+        "state": "string",
+        "latitude": "string",
+        "longitude": "string",
+        "is_cahps_contact": "bool",
+        "is_copy_of_poa_paper_on_file": false,
+        "permission_granted_to_contact": false,
+        "is_living_with_patient": false,
+        "roles": ""
+      }
+    ],
+    "patient_reps": [
+      {
+        "patient_rep_id": "int",
+        "first_name": "string",
+        "last_name": "string",
+        "relation": "string",
+        "priority": "string",
+        "gender": "string",
+        "home_phone": "string",
+        "cell_phone": "string",
+        "work_phone": "string",
+        "fax": "string",
+        "email": "strinig",
+        "address_id": 0,
+        "address1": "string",
+        "address2": "string",
+        "zip": "string",
+        "city": "string",
+        "state": "string",
+        "latitude": "string",
+        "longitude": "string"
+      }
+    ],
+    "custom_fields": [
+      {
+        "custom_field_value_id": "int",
+        "custom_field_id": "int",
+        "field_type": "string",
+        "field_name": "string",
+        "field_value": "string",
+        "is_deleted": false
+      }
+    ],
+    "referral_info": {
+      "intake_added_by_id": 0,
+      "intake_added_by_name": "",
+      "intake_date": "date",
+      "physician_referral_date": "date",
+      "requested_soc_date": "date",
+      "recert_date": "01/01/2000",
+      "physician_ordered_date": "01/01/2000",
+      "intake_added_on": "date",
+      "intake_accepted_on": "01/01/2000",
+      "referral_reason": "",
+      "referral_source": {
+        "referral_source_type": "string",
+        "ref_facility_id": "int",
+        "facility_contact_id": "int",
+        "facility_contact_name": "string",
+        "other_organization": "string",
+        "other_contact_first_name": "string",
+        "other_contact_last_name": "string",
+        "other_contact_middle_initial": "string",
+        "other_contact_phone": "string",
+        "referring_physician_id": "int",
+        "referring_physician_office_id": "int",
+        "referring_physician_contact_id": "int",
+        "referring_physician_contact_name": "string",
+        "admission_source_id": "int",
+        "admission_source_name": "string",
+        "prior_to_admission_info": {
+          "was_acute_stay_past_14days": false,
+          "facility_type": "string",
+          "discharge_date_for_acute": "string"
+        },
+        "patient_received_medicare_services_60_days": "bool",
+        "sales_person_id": "int",
+        "sales_person_name": "string"
+      },
+      "attending_physician": {
+        "physician_id": "int",
+        "physician_office_id": "int"
+      },
+      "primary_care_physician": {
+        "physician_id": "int",
+        "physician_office_id": "int"
+      }
+    },
+    "visit_info": {
+      "last_md_visit_on": "string",
+      "next_md_Visit_on": "string",
+      "visit_plans": [
+        {
+          "visit_plan_entry_id": 0,
+          "phoenix_origin": "",
+          "clinician_id": 0,
+          "prn_visits": 0,
+          "service_code_id": 0,
+          "notes": "",
+          "prn_reason": "",
+          "status": "",
+          "phoenix_external_id": "",
+          "discipline": "",
+          "visit_start_hour": "2014-01-01 00:00:00.000",
+          "visit_end_hour": "2014-01-01 00:00:00.000",
+          "schedule": "",
+          "created_by": 0,
+          "approved_by": 0,
+          "visit_start_date": "01/01/2000",
+          "visit_end_date": "01/01/2000",
+          "poc_id": 0,
+          "used_prn_visits": 0,
+          "is_hourly_prn": false,
+          "visits_planned": 0,
+          "payment_source_id": 0,
+          "plan_type": ""
+        }
+      ],
+      "visits": [
+        {
+          "cg_task_id": "int",
+          "payer_id": "int",
+          "visit_date": "date",
+          "planned_time_start": "time",
+          "planned_time_end": "time",
+          "actual_time_start": "time",
+          "actual_time_end": "time",
+          "disc_id": "int",
+          "disc_name": "string",
+          "service_id": "int",
+          "service_name": "string",
+          "clinician_id": "int",
+          "billable": "bool",
+          "place_of_service_id": "int",
+          "schedule_status": "string",
+          "poc_id": "int",
+          "visit_plan_id": "int"
+        }
+      ]
+    },
+    "additional_pharmacies": [
+      {
+        "additional_pharmacy_id": "int",
+        "pharmacy_master_id": "int",
+        "pharmacy_name": "string",
+        "phone": "string",
+        "email": "string"
+      }
+    ],
+    "other_physicians": [
+      {
+        "other_physician_id": "int",
+        "physician_master_id": "int",
+        "phone": "string",
+        "fax": "string",
+        "physician_office_id": "int",
+        "physician_office_phone": "string",
+        "physician_office_fax": "string"
+      }
+    ],
+    "preferred_staff_skills": [
+      {
+        "skill_id": "int",
+        "skill_master_id": "int",
+        "group": "string",
+        "skill": "string"
+      }
+    ],
+    "preferences": [
+      {
+        "preference_id": "int",
+        "preference_master_id": "string",
+        "preference": "string"
+      }
+    ],
+    "hospice_benefit_period": {
+      "hosp_benefit_period_type": "string",
+      "hosp_benefit_period_number": "int",
+      "is_hosp_benefit_period_within_60_days": "char",
+      "is_hosp_benefit_period_bill_high_rate": "bool",
+      "hosp_benefit_period_transferred_from_org": "int",
+      "hosp_benefit_period_transferred_date": "date",
+      "hosp_benefit_period_start_from": "date",
+      "hosp_benefit_period_previous_billed_high_days": "int"
+    },
+    "payers": [
+      {
+        "client_payment_source_id": "int",
+        "payer_master_id": "int",
+        "payer_name": "string",
+        "insurance_id": "string",
+        "payment_source_type": "",
+        "payment_source_flag": 0,
+        "is_early_episode": false,
+        "is_primary_insurance": false,
+        "allow_exportable_full_oasis": false,
+        "allow_non_exportable_full_oasis": false,
+        "allow_non_oasis_assessment": false,
+        "default_assessment_type": "",
+        "is_rnb_payer": false,
+        "effective_periods": [
+          {
+            "effective_from": "01/01/2024",
+            "effective_to": "01/01/2024"
+          }
+        ],
+        "additional_payers": [
+          {
+            "client_additional_payer_id": "int",
+            "client_payment_source_id": "int",
+            "payer_master_id": "int",
+            "payer_name": "string",
+            "payer_level": "string",
+            "insurance_id": "string",
+            "payment_source_type": "",
+            "payment_source_flag": 0,
+            "effective_periods": [
+              {
+                "effective_from": "01/01/2024",
+                "effective_to": "01/01/2024"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "clinical_data": {
+      "diagnosis_codes": {
+        "primary_diagnosis_code": "",
+        "surgical_diagnosis_code": "",
+        "other_diagnosis_codes": [
+          "string"
+        ]
+      },
+      "allergies": [
+        {
+          "client_allergy_id": "int",
+          "allergy_master_id": "int",
+          "description": "string",
+          "type": "string",
+          "reaction": "string"
+        }
+      ],
+      "medications": [
+        {
+          "client_medication_id": "int",
+          "medication": "string",
+          "dosage": "string",
+          "qty": "",
+          "freq": "string",
+          "route": "string",
+          "annotation": "string",
+          "start_date": "01/01/2000",
+          "start_time": "string",
+          "giver": "string",
+          "rx": "string",
+          "med_ext_id": "string",
+          "comments": "string",
+          "orig_med_id": "string",
+          "presription_no": "string",
+          "purpose": "string",
+          "is_antibiotic": "bool",
+          "is_high_risk": "bool",
+          "classification": "string",
+          "drug_id": "string",
+          "is_prn_med": "bool",
+          "code": "string",
+          "dc_date": "01/01/2000",
+          "dc_time": "",
+          "is_deleted": false,
+          "pt_pcg_med": false,
+          "effectiveness": "string",
+          "instruction": "string",
+          "req_med_teach_doc": false,
+          "amount": "int",
+          "freq_days": "int",
+          "planned_time": "string",
+          "dosage_form": "string",
+          "medication_teaching": "string",
+          "freq_Type": "string",
+          "freq_dayon": "int",
+          "freq_day_off": "int",
+          "ndc": "string",
+          "rx_norm_code": "string",
+          "planned_days": "string",
+          "planned_dates": "string",
+          "find_next_duedate": "string"
+        }
+      ],
+      "f2f_info": {
+        "is_avail": false,
+        "encounter_type": "",
+        "encounter_date": "01/01/2000",
+        "physician_id": 0,
+        "other_physician": "",
+        "followup_physician_id": 0,
+        "other_followup_physician": "",
+        "documentaiton_avail_in_file": false,
+        "encounter_requested": false,
+        "encounter_requested_by": 0,
+        "encounter_requested_on": "01/01/2000",
+        "encounter_scheduled": false,
+        "encounter_scheduled_on": "01/01/2000",
+        "notes": "",
+        "f2f_hosp_config": {
+          "is_avail": "bool",
+          "visit_date": "01/01/2000",
+          "physician_id": "int",
+          "other_physician": "",
+          "f2f_document_id": 0,
+          "f2f_document_path": ""
+        }
+      },
+      "orders_data": {
+        "orders_received": "bool",
+        "services": [
+          {
+            "disc_id": "int",
+            "disc_name": "string"
+          }
+        ],
+        "order_description": "string",
+        "initial_orders": "string",
+        "surgery_procedures": "string",
+        "dme": "string",
+        "med_hist": "string"
+      }
+    },
+    "staff_assignments": {
+      "case_manager_id": "int",
+      "qa_id": "int",
+      "scheduler_id": "int",
+      "cc1_id": "int",
+      "cc2_id": "int",
+      "cc3_id": "int",
+      "soc_Clinician_id": "int",
+      "primary_clinician_id": "int",
+      "is_pending_pt": "bool",
+      "is_pending_ot": "bool",
+      "is_pending_st": "bool",
+      "followup_clinicians": [
+        {
+          "clinician_disc_id": "int",
+          "clinician_disc_name": "string",
+          "caregiver_id": "int"
+        }
+      ]
+    },
+    "episode_data": {
+      "episode_duration": 0,
+      "episodes": [
+        {
+          "episode_id": 0,
+          "start_date": "01/01/2000",
+          "end_date": "01/01/2000",
+          "actual_end_date": "01/01/2000",
+          "episode_no": 0,
+          "poc_id": 0,
+          "cdp_care_period_id": ""
+        }
+      ]
+    },
+    "discharge_info": {
+      "discharge_date": "01/01/2000"
+    },
+    "client_alert": {
+      "alert_message": "",
+      "message_type": "",
+      "enable_client_alert": false,
+      "show_in_visits": false
+    },
+    "migration_info": {
+      "migration_activation_date": ""
+    }
+  }
